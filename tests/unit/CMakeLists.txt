@@ -166,7 +166,7 @@ function (seastar_add_test name)
 
   set_tests_properties (Seastar.unit.${name}
     PROPERTIES
-      TIMEOUT ${Seastar_TEST_TIMEOUT})
+      TIMEOUT "${Seastar_TEST_TIMEOUT}")
 endfunction ()
 
 #

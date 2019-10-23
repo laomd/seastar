@@ -665,7 +665,7 @@ endif ()
 #
 # We disable _FORTIFY_SOURCE because it generates false positives with longjmp() (src/core/thread.cc)
 #
-
+set (CMAKE_POSITION_INDEPENDENT_CODE TRUE)
 target_compile_options (seastar
   PUBLIC
     -std=${Seastar_CXX_DIALECT}

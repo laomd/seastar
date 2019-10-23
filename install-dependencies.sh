@@ -78,9 +78,9 @@ redhat_packages=(
 
 fedora_packages=(
     "${redhat_packages[@]}"
-    gcc-c++
     ninja-build
     ragel
+    gcc-c++
     boost-devel
     fmt-devel
     libubsan
@@ -91,6 +91,8 @@ fedora_packages=(
 centos_packages=(
     "${redhat_packages[@]}"
     ninja-build
+    boost-devel
+    fmt-devel
     ragel
     rh-mongodb36-boost-devel
     devtoolset-8-gcc-c++
